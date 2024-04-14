@@ -1,5 +1,7 @@
 import "./App.css";
 import Greet from "./components/Greet";
+import Welcome from "./components/Welcome";
+import Navbar from "./components/Navbar";
 
 function App() {
 	const usingDynamicValue = "Component";
@@ -7,6 +9,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Navbar/>
 			<div className="content">
 				{/* Working with dynamic values start*/}
 				<div className="dynamicValue">
@@ -24,6 +27,7 @@ function App() {
 				{/* Working with dynamic values end*/}
 
 				<Greet></Greet>
+				<Welcome></Welcome>
 			</div>
 		</div>
 	);
